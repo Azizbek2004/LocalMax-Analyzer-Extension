@@ -17,9 +17,7 @@ export default function EvalBar({ evalCp }: Props) {
             </div>
 
             {/* Bar */}
-            <div className="flex-1 w-6 rounded-full overflow-hidden bg-white relative border border-navy-700/50"
-                style={{ minHeight: '400px' }}
-            >
+            <div className="flex-1 w-6 rounded-full overflow-hidden bg-white relative border border-navy-700/50 min-h-[250px] md:min-h-[400px]">
                 {/* Black portion (top) */}
                 <div
                     className="absolute top-0 left-0 right-0 bg-navy-900 transition-all duration-500 ease-out"

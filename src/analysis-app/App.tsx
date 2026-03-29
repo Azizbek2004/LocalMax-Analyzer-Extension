@@ -182,9 +182,9 @@ export default function App() {
 
             {engine.isAnalyzing && <ProgressBar progress={engine.progress} />}
 
-            <div className="flex-1 flex gap-4 p-4 max-w-[1800px] mx-auto w-full">
+            <div className="flex-1 flex flex-col xl:flex-row gap-4 p-2 md:p-4 max-w-[1800px] mx-auto w-full">
                 {/* Left Panel — Board + Eval */}
-                <div className="flex gap-2 shrink-0">
+                <div className="flex gap-2 shrink-0 md:justify-center xl:justify-start">
                     <EvalBar evalCp={currentEval} />
                     <div className="flex flex-col gap-3">
                         <Board />
@@ -204,7 +204,7 @@ export default function App() {
                 {/* Right Panel — Analysis */}
                 <div className="flex-1 flex flex-col gap-3 min-w-0">
                     {/* Move List + Engine Lines */}
-                    <div className="flex gap-3 flex-1 min-h-0">
+                    <div className="flex flex-col md:flex-row gap-3 flex-1 min-h-0">
                         <MoveList />
                         <div className="flex-1 flex flex-col gap-3 min-w-0">
                             <EngineLines />

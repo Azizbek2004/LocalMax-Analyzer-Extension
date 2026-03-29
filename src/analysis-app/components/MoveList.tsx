@@ -41,7 +41,7 @@ export default function MoveList() {
     }
 
     return (
-        <div className="glass-panel p-3 w-[260px] overflow-auto max-h-[600px] shrink-0">
+        <div className="glass-panel p-3 w-full md:w-[260px] overflow-y-auto max-h-[200px] md:max-h-[600px] shrink-0">
             <h3 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Moves</h3>
             <div className="space-y-0.5">
                 {movePairs.map((pair) => (

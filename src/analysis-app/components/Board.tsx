@@ -108,12 +108,11 @@ export default function Board() {
     const isGreatMove = currentInsight && ['brilliant', 'best'].includes(currentInsight.classification);
 
     return (
-        <div className="glass-panel p-3">
-            <div className="relative w-[520px] h-[520px]">
+        <div className="glass-panel p-2 md:p-3 w-full max-w-[520px] mx-auto min-w-[280px] hover:glow-cyan transition-shadow duration-500">
+            <div className="relative w-full aspect-square">
                 <Chessboard
                     id="analysis-board"
                     position={fen}
-                    boardWidth={520}
                     boardOrientation={orientation}
                     arePiecesDraggable={false}
                     customBoardStyle={{
